@@ -22,8 +22,10 @@ public class MainActivity extends AppCompatActivity {
         lv_noticias.setAdapter(customAdapter);
 
         Noticia noticia1 = new Noticia("Logo nuevo de HED", "Este año el logo de HED tendra un cambio", "30/08/2018");
+        Noticia noticia2 = new Noticia("Reto fit", "Wachu wachu wachu", "30/08/2018");
 
         customAdapter.agregarNoticia(noticia1);
+        customAdapter.agregarNoticia(noticia2);
 
         lv_noticias.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
